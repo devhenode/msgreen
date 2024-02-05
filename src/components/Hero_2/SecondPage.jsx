@@ -1,9 +1,11 @@
 import React from 'react';
 import Button from '../Button';
+import ThirdPage from '../Hero_3/ThirdPage';
+import FourthPage from '../Hero_4/FourthPage';
 
 const SecondPage = () => {
   return (
-    <div className="flex flex-col md:flex-row mb-5">
+    <div className="flex flex-col md:flex-row mb-5 relative">
       {/* Left Column */}
       <div className="md:flex-1">
         {/* Add your text here */}
@@ -30,6 +32,11 @@ const SecondPage = () => {
         <Button>
           WAITLIST
         </Button>
+      </div>
+
+      {/* Third Page */}
+      <div className="absolute bottom-0 left-0 w-full">
+        <ThirdPage />
       </div>
     </div>
   );

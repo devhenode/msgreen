@@ -47,7 +47,8 @@ const HeroPage = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:ml-0'>
           <Button className='bg-green-900 md:mr-2 active'>BUY TOKEN</Button>
           
-          <Button>WHITE PAPER</Button>
+          <Button><a href="https://drive.google.com/file/d/1SzU5-Ut2p3WF4Oiur8G1O3KHDssKrgpW/view">WHITE PAPER</a></Button>
+
           {/* Add music to the last button */}
           <Button onClick={togglePlay}>{isPlaying ? 'PAUSE MUSIC' : 'PLAY MUSIC'}</Button>
         </div>
