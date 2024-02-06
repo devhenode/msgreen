@@ -2,8 +2,19 @@ import React, { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import logo from '../../assets/logo.png';
 import Button from '../Button';
+import Modal from '../Modal/Modal';
 
 const HeroPage = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   const [isPlaying, setIsPlaying] = useState(false);
   const audioUrl = '../../assets/MS$GREEN.mp3';
 
@@ -44,14 +55,22 @@ const HeroPage = () => {
         </p>
 
         {/* Your btn goes here */}
+        <button className="ring-2 bg-green-900 ring-green-500 group-hovering:ring-1 transition duration-300 text-white px-3 py-2 m-2 md:text-sm rounded md:font-sm hover:bg-green-40" onClick={openModal}>
+            BUY TOKEN
+          </button>
+          <Modal isOpen={modalOpen} onClose={closeModal} />
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:ml-0'>
-          <Button className='bg-green-900 md:mr-2 active'>BUY TOKEN</Button>
+            
           
+       
+
           <Button><a href="https://drive.google.com/file/d/1SzU5-Ut2p3WF4Oiur8G1O3KHDssKrgpW/view">WHITE PAPER</a></Button>
 
           {/* Add music to the last button */}
           <Button onClick={togglePlay}>{isPlaying ? 'PAUSE MUSIC' : 'PLAY MUSIC'}</Button>
         </div>
+
+      
       </div>
 
       <div className='md:col-span-1 mx-6 md:ml-0'>

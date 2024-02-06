@@ -8,6 +8,7 @@ const SeventhPage = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="my-16">
       <div className="text-5xl text-center my-16">
         <span>Ms Green's Quote</span>
@@ -16,6 +17,14 @@ const SeventhPage = () => {
       <div className="hs-accordion-group md:mx-52">
         <Accordion
           className="border-solid border-2 border-lime-500"
+=======
+    <div>
+      <div className="text-5xl text-center my-16">
+        <span>Ms Green's Quote</span>
+      </div>
+      <div className="hs-accordion-group md:mx-52">
+        <Accordion
+>>>>>>> 9aa728734363366e494918758a8db4da07f2f049
           id="hs-basic-with-arrow-heading-one"
           title="Quote 1"
           content="Oh, C'mon she'd eat you for dinner"
@@ -23,7 +32,10 @@ const SeventhPage = () => {
           onToggle={handleAccordionToggle}
         />
         <Accordion
+<<<<<<< HEAD
         className="divider"
+=======
+>>>>>>> 9aa728734363366e494918758a8db4da07f2f049
           id="hs-basic-with-arrow-heading-two"
           title="Quote 2"
           content="Are we good"
