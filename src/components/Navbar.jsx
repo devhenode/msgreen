@@ -50,7 +50,7 @@ function Navbar() {
 
             <div className="md:flex md:ml-4">
               <Button>BUY TOKEN</Button>
-              <Button>WHITEPAPER</Button>
+              <Button><a href="https://drive.google.com/file/d/1SzU5-Ut2p3WF4Oiur8G1O3KHDssKrgpW/view">WHITE PAPER</a></Button>
             </div>
           </ul>
         </div>
